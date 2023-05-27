@@ -1,0 +1,203 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title th:text="${title}">Page Title</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+</head>
+<header th:insert="blocks/header :: header"></header>
+
+<div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Ласкаво просимо до застосунку</h1>
+            <p class="lead">В цьому застосунку Ви можете переглядати точну кількість кожного виду
+                солодощів, що знаходиться на складі, а також дату їх виготовлення.
+                Наприклад, якщо ви бачите, що кількість певного виду солодощів на складі зменшується,
+                ви можете прийняти рішення про посилення їх виробництва. За допомогою інформації про
+                дату виготовлення, ви можете врахувати час зберігання продукції і спланувати продаж таким
+                чином, щоб уникнути прострочки.</p>
+        </div>
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+            <img class="rounded-lg-6"
+                 src="https://images.unsplash.com/photo-1570476922354-81227cdbb76c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
+                 alt="" width="800">
+        </div>
+    </div>
+</div>
+<main class="mt-5">
+    <div class="container">
+        <section>
+            <div class="row">
+                <div class="col-md-6 gx-5 mb-4">
+                    <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+                        <img src="https://images.unsplash.com/photo-1602296751203-b9aa27fe9426?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+                             class="img-fluid"/>
+                        <a href="#!">
+                            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6 gx-5 mb-4">
+                    <h4><strong>Властивості застосуноку</strong></h4>
+
+                    <p class="text-muted">
+
+                        На головній сторінці ви знайдете цікаву та корисну інформацію про вашу продукцію.
+                    </p>
+                    <p><strong>Будьте в курсі стану вашого складу</strong></p>
+                    <p class="text-muted">
+                        Завдяки інформації про дату виготовлення, ви можете ефективно і
+                        Наш застосунок також допомагає уникнути нестачі або надмірних запасів.
+                        Ви зможете відстежувати рух солодощів на складі і забезпечити належне управління
+                        запасами. Це дозволяє економити час і ресурси, уникати втрат і оптимізувати виробничий процес.
+                        Застосування нашого рішення для обліку солодкої продукції має багато переваг.
+                        Ви зможете покращити ефективність вашого бізнесу, забезпечити задоволення клієнтів
+                        і збільшити вашу конкурентоспроможність на ринку.
+
+
+                    </p>
+                </div>
+            </div>
+        </section>
+        <hr class="my-5"/>
+        <section class="text-center">
+            <h4 class="mb-5"><strong>Види продукції</strong></h4>
+
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="https://img.freepik.com/free-photo/close-up-tasty-chocolate-cupcakes_23-2147840237.jpg?w=1060&t=st=1684699044~exp=1684699644~hmac=a212dd0e5ae24b725aa9c48e2e8f00397d7f5a988d68ca07cd87bccfe2209938"
+                                 class="img-fluid"/>
+                            <a href="/view">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Кекс з шоколадом</h5>
+                            <p class="card-text">
+                                Має ніжне шоколадне тісто,
+                                та смачний шоколадний ганаш в середині. Зверху кекс
+                                прикрашений шоколадними крихтами, що надають йому елегантний вигляд.
+                            </p>
+                            <a href="/view" class="btn btn-outline-secondary">Переглянути товар</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="https://img.freepik.com/free-photo/beautiful-delicious-dessert-strawberry-cream-fruit_23-2148718722.jpg?w=1060&t=st=1684699018~exp=1684699618~hmac=96e073c0a61ea2b4cb9f5db5985b7050b00700ca4eeb314264258c101f2a51e1"
+                                 class="img-fluid"/>
+                            <a href="/view">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Кекс з малиною</h5>
+                            <p class="card-text">
+                                Солодкий кекс з освіжаючим смаком
+                                малини. Цей кекс має пухке тісто з
+                                оковитими шматочками малини. Він надає
+                                чудовий баланс між солодким і кисло-солодким смаком.
+                            </p>
+                            <a href="/view" class="btn btn-outline-secondary">Переглянути товар</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="https://img.freepik.com/free-photo/zoom-view-little-round-cake-decorated-with-strawberries-white-plate_176474-120149.jpg?w=1060&t=st=1684698915~exp=1684699515~hmac=55a8a0bdb92b49ef4e515a495d581c3b5341bf03313ba518073ca4e1c523d825"
+                                 class="img-fluid"/>
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Кекс з полуницею</h5>
+                            <p class="card-text">
+                                Солодкий і соковитий кекс, виконаний з найкращої полуниці.
+                                Комбінація ніжного тіста і свіжих ягід полуниці робить цей кекс
+                                особливо смачним та апетитним.
+                            </p>
+                            <a href="/view" class="btn btn-outline-secondary">Переглянути товар</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="https://img.freepik.com/free-photo/chocolate-ice-cream-plate_23-2147831831.jpg?w=1060&t=st=1684703778~exp=1684704378~hmac=e46f1fc6d383b775bcdf75f4d1258ea75a1497bb8f6a0c134c3023a9177e81ee"
+                                 class="img-fluid"/>
+                            <a href="/view">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Шоколадне морозиво</h5>
+                            <p class="card-text">
+                                екстура шоколадного морозива є кремовою,
+                                гладкою і ніжною. Розкриваючи свою багату консистенцію. Це морозиво
+                                може мати різні варіації, від класичного шоколаду до гіркого.
+                            </p>
+                            <a href="/view" class="btn btn-outline-secondary">Переглянути товар</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="https://img.freepik.com/free-photo/fruit-cake-with-chocolate-chips-blueberries_176474-2965.jpg?w=1060&t=st=1684703564~exp=1684704164~hmac=d12582dae5bc3c63189d1ce7270189c298515ce41ee963024ba12b4f6fb4094f"
+                                 class="img-fluid"/>
+                            <a href="/view">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Бісквітний торт</h5>
+                            <p class="card-text">
+                                Він має яскраве червоне тісто, яке привертає погляди і робить його
+                                неповторним. Тісто виконане з використанням цукрового барвника або соку
+                                червоної свіжої полуниці
+                            </p>
+                            <a href="/view" class="btn btn-outline-secondary">Переглянути товар</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                            <img src="https://img.freepik.com/free-photo/set-tea-nuts-dessert-plate-white-wooden-background-side-view_176474-3848.jpg?w=1060&t=st=1684703176~exp=1684703776~hmac=53831133e0ccc733c81295a581b6a3646ce3291632ffb0977bebb1d9199878b2"
+                                 class="img-fluid"/>
+                            <a href="#!">
+                                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                            </a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Шоколадний торт</h5>
+                            <p class="card-text">
+                                Цей торт поєднує в собі два улюблені десерти:
+                                шоколадне тісто і морозиво. Він складається з пухкого
+                                шоколадного бісквіту, який має ніжну текстуру та насичений шоколадний смак.
+                            </p>
+                            <a href="/view" class="btn btn-outline-secondary">Переглянути товар</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+<div th:insert="blocks/footer :: footer"></div>
+</html>
